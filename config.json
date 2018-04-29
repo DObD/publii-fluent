@@ -1,9 +1,10 @@
 {
-    "name": "Starter",
-    "version": "1.0.3.0",
-    "author": "TidyCustoms <https://tidycustoms.net/>",
+    "name": "Fluent",
+    "version": "1.0.0.0",
+    "author": "Darren by Design <https://darrenby.design/>",
     "menus": {
-        "mainMenu": "Main menu"
+        "mainMenu": "Main menu",
+        "footerMenu": "Footer menu"
     },
     "renderer": {
         "relatedPostsNumber": 3,
