@@ -302,7 +302,6 @@ table {
   display: block;
   max-width: 100%;
   overflow-x: auto;
-  vertical-align: top;
   text-align: left;
   white-space: nowrap
 }
