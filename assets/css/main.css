@@ -1,4 +1,16 @@
 @charset "UTF-8";
+
+@font-face{
+  font-family: 'Fira Code';
+  src: url('https://storage.googleapis.com/darren-by-design.appspot.com/fonts/eot/FiraCode-Regular.eot');
+  src: url('https://storage.googleapis.com/darren-by-design.appspot.com/fonts/eot/FiraCode-Regular.eot') format('embedded-opentype'),
+       url('https://storage.googleapis.com/darren-by-design.appspot.com/fonts/woff2/FiraCode-Regular.woff2') format('woff2'),
+       url('https://storage.googleapis.com/darren-by-design.appspot.com/fonts/woff/FiraCode-Regular.woff') format('woff'),
+       url('https://storage.googleapis.com/darren-by-design.appspot.com/fonts/ttf/FiraCode-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
 *,
 *:before,
 *:after {
@@ -32,7 +44,7 @@ textarea {
   font: inherit; }
 
 html {
-  font-size: 1rem; }
+  font-size: 18px; }
   @media screen and (min-width: 20rem) {
     html {
       font-size: -webkit-calc(1rem + 0.2 * ((100vw - 20rem) / 113));
@@ -44,7 +56,7 @@ html {
 body {
   background: #ffffff;
   color: #343434;
-  font-family: "PT Serif", serif;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
   font-weight: 400;
   line-height: 1.6; }
 
@@ -86,8 +98,8 @@ h4,
 h5,
 h6 {
   color: #343434;
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  
+  font-weight: 400;
   line-height: 1.2;
   margin-top: -webkit-calc(1.86667rem + 0.5vw);
   margin-top: calc(1.86667rem + 0.5vw); }
@@ -167,13 +179,13 @@ strong {
   font-weight: 700; }
 
 blockquote {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  
+  font-weight: 400;
   padding: 0 15%; }
   blockquote cite {
     color: #343434;
     display: block;
-    font-family: "PT Serif", serif;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
     font-size: 0.87891rem;
     font-style: normal;
     padding-top: 0.53333rem; }
@@ -184,7 +196,7 @@ blockquote {
     height: 0;
     content: "“";
     margin-left: -.55em;
-    font: normal 400%/0.9 "Roboto", sans-serif;
+    font: normal 400%/0.9 -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", "Roboto", "Helvetica Neue", Arial, sans-serif;
     color: #e3e3e3; }
     @media all and (min-width: 37.5em) {
       blockquote:before {
@@ -199,7 +211,7 @@ ol {
     padding: 0.26667rem 0 0 1.06667rem; }
 
 dl dt {
-  font-weight: 700; }
+  font-weight: 400; }
 
 pre {
   margin: -webkit-calc(1.06667rem + 0.25vw) 0 0;
@@ -211,7 +223,7 @@ pre {
 code,
 pre {
   background-color: #f6f6f6;
-  font-family: "Monaco", "Courier New", monospace;
+  font-family: "Fira Code", "Courier New", monospace;
   font-size: 0.9375rem; }
 
 table {
@@ -233,7 +245,7 @@ table {
 
 figcaption {
   color: #908e98;
-  font-family: "Roboto", sans-serif;
+  
   font-weight: 400;
   font-size: 0.77248rem;
   margin: 1.06667rem 0 0;
@@ -254,14 +266,13 @@ hr {
 button {
   background: #3949ab;
   border: none;
-  -webkit-border-radius: 50px;
-  border-radius: 50px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font: 700 0.7242rem "Roboto", sans-serif;
-  letter-spacing: 0.15rem;
-  padding: 0.8rem 1.6rem;
+  letter-spacing: 0.05rem;
+  padding: 0.5rem 1.26rem;
   vertical-align: middle;
   text-align: center;
   text-transform: lowercase;
@@ -312,10 +323,10 @@ fieldset {
     padding: 0 1rem; }
 
 legend {
-  font-weight: 700; }
+  font-weight: 400; }
 
 label {
-  font-weight: 700;
+  font-weight: 400;
   margin: 0 1.06667rem 0.8rem 0; }
 
 option {
@@ -394,7 +405,7 @@ select {
 [type=checkbox]:checked + .checkbox:before {
   content: "\2713";
   color: #3949ab;
-  font-weight: 700; }
+  font-weight: 400; }
 
 [type=radio]:checked + .radio:before {
   -webkit-box-shadow: inset 0 0 0 4px #ffffff;
@@ -521,11 +532,9 @@ textarea {
   position: relative; }
 
 .logo {
-  color: #343434 !important;
-  font-family: "Roboto", sans-serif;
-  font-weight: 800; }
+  font-weight: 400; }
   .logo {
-    font-size: 1.4729rem; }
+    font-size: 1.2729rem; }
     @media screen and (min-width: 20rem) {
       .logo {
         font-size: -webkit-calc(1.4729rem + 0.43382 * ((100vw - 20rem) / 113));
@@ -537,9 +546,13 @@ textarea {
     .logo {
       margin: 0; } }
 
+.logo img {
+  height: 50px;
+}
+
 .navbar__menu {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
+  
+  font-weight: 400;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -605,6 +618,14 @@ textarea {
       .navbar__menu li a:hover:not(span),
       .navbar__menu li span:hover:not(span) {
         color: #3949ab; }
+
+.navbar__menu li.btn a {
+  padding: .5rem 1.26rem;
+  background: white;
+  box-shadow: 0 6px 22px 2px rgba(0,0,0,.13);
+  text-transform: uppercase;
+  border-radius: 3px;
+}
 
 @media all and (max-width: 56.1875em) {
   .navbar__submenu {
@@ -800,8 +821,8 @@ textarea {
     margin-right: 2rem; }
   .authors__title {
     display: block;
-    font-family: "Roboto", sans-serif;
-    font-weight: 700; }
+    
+    font-weight: 400; }
 
 .tags > li {
   display: -webkit-box;
@@ -821,7 +842,7 @@ textarea {
 
 .u-small {
   color: #908e98;
-  font-family: "Roboto", sans-serif;
+  
   font-weight: 400;
   font-size: 0.77248rem; }
 
@@ -835,9 +856,11 @@ textarea {
 
 .hero {
   height: 29rem;
+  overflow: hidden;
   position: relative; }
   .hero__image {
     height: 29rem;
+    filter: blur(3px) brightness(.45);
     -o-object-fit: cover;
     object-fit: cover;
     opacity: 0.9;
@@ -853,7 +876,10 @@ textarea {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-    .hero__text > h1 {
+    .hero__text > h1,
+    .hero__text > h2,
+    .hero__text > h3,
+    .hero__text > h4 {
       color: #ffffff; }
     .hero__text > .btn, .hero__text > [type=button], .hero__text >
     [type=submit], .hero__text >
@@ -905,7 +931,7 @@ textarea {
       vertical-align: middle; }
 
 .post {
-  border-top: 3px solid #343434;
+  /* border-top: 3px solid #343434; */
   padding-top: -webkit-calc(1.86667rem + 0.5vw);
   padding-top: calc(1.86667rem + 0.5vw); }
   .post__meta {
@@ -951,6 +977,9 @@ textarea {
       top: 0;
       width: 100%; }
   .post__entry {
+    max-width: 750px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: -webkit-calc(1.86667rem + 1vw);
     margin-top: calc(1.86667rem + 1vw); }
     @media all and (max-width: 56.1875em) {
@@ -995,7 +1024,7 @@ textarea {
     -webkit-border-radius: 50px;
     border-radius: 50px;
     display: inline-block;
-    font-family: "Roboto", sans-serif;
+    
     font-size: 0.77248rem;
     padding: 0.53333rem 1.6rem;
     margin: 0.53333rem 0.53333rem 0; }
@@ -1014,7 +1043,7 @@ textarea {
         -webkit-border-radius: 50px;
         border-radius: 50px;
         display: inline-block;
-        font-family: "Roboto", sans-serif;
+        
         font-size: 0.77248rem;
         padding: 0.53333rem 1.6rem; }
   .post__bio > img {
@@ -1117,6 +1146,20 @@ textarea {
       font-size: 0.87891rem;
       margin: 1.6rem 0 0.53333rem; }
 
+.post header figure {
+  height: calc((100vh * 300)/ 600);
+  overflow: hidden;
+  align-content: center;
+  display: grid;
+  width: 100%;
+}
+.post figure img {
+  width: 100%;
+  object-fit: cover;
+  align-self: center;
+  justify-self: center;
+}
+
 .comments {
   border-top: 1px solid #e3e3e3;
   padding-top: -webkit-calc(1.86667rem + 0.5vw);
@@ -1175,7 +1218,7 @@ textarea {
 .dropcap:first-letter {
   color: #343434;
   float: left;
-  font-family: "Roboto", sans-serif;
+  
   line-height: 0.6;
   margin-right: 0.53333rem;
   padding: 0.53333rem 0.53333rem 0.53333rem 0; }
@@ -1195,7 +1238,7 @@ textarea {
 
 .footer {
   border-top: 1px solid #e3e3e3;
-  font-family: "Roboto", sans-serif;
+  
   margin-top: -webkit-calc(1.86667rem + 0.5vw);
   margin-top: calc(1.86667rem + 0.5vw);
   padding: -webkit-calc(1.86667rem + 0.5vw) 0;
@@ -1271,4 +1314,51 @@ textarea {
 .pswp--light .pswp__caption__center {
   color: #343434; }
 
+.card__image {
+  height: calc((100vh * 200) / 600);
+  max-height: 300px;
+  max-width: 1200px;
+  overflow: hidden;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  -webkit-box-shadow: 0 18px 64px 0 rgba(0, 0, 0, 0.3);
+  box-shadow: 0 18px 64px 0 rgba(0, 0, 0, 0.3);
+}
+.card__image > img {
+  object-fit: cover;
+  align-self: center;
+  justify-self: center;
+}
+
+.acrylic {
+  padding: 4em 6em;
+  position: relative;
+  overflow: hidden;
+}
+
+.acrylic::before {
+  filter: blur(10px);
+  content: "";
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  width: calc(100% + 20px);
+  height: calc(100% + 20px);
+  z-index: -1;
+}
+
+.acrylic::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  opacity: 0.35;
+  border: 1px solid #fff;
+  background: #fff;
+  background-image: url(data:image/png;base64,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);
+}
 /*# sourceMappingURL=main.css.map */

@@ -84,9 +84,9 @@
                    <h2 class="article__title">
                         <a href="{{url}}">{{title}}</a>
                     </h2>
-                    {{#if excerpt}}
+                    {{!-- {{#if excerpt}}
                         <p>{{{excerpt}}}</p>
-                    {{/if}}
+                    {{/if}} --}}
 
                     <p class="article__meta u-small">
                         {{#author}}
@@ -107,6 +107,12 @@
 						</time>
                     </p>
                 </header>
+                <footer class="u-footer">
+                    {{#if @config.custom.displayReadMore}}
+                        <a href="{{url}}" class="u-readmore">
+                            {{ translate 'post.readMore' }}</a>
+                    {{/if}}
+                </footer>                       
             </article>
         {{/each}}
 
